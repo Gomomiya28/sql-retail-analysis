@@ -108,7 +108,7 @@ SELECT EXTRACT('YEAR' FROM order_purchase_timestamp) AS year,
 FROM orders
 WHERE EXTRACT('YEAR' FROM order_purchase_timestamp) = '2016'
 GROUP BY year, month
-ORDER BY num_orders
+ORDER BY num_orders;
 
 -- == FINDINGS: 2016 only has data for months: 9,10,12 - no records for month 11. **Assumption** is that there were no orders placed this month.
 
